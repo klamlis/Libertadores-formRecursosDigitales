@@ -3,6 +3,11 @@ $(document).ready(function()
 	//alert("hola");
 	 $("#dataError").hide();
 	
+	$(".clicDescargar").click(function()
+	{
+		var index = $( ".clicDescargar" ).index( this );
+		alert(index);
+	});
 
 	$("#btn_login").click(function()
 	{

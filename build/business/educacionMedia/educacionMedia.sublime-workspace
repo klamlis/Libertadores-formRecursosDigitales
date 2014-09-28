@@ -1,0 +1,497 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"a",
+				"alert"
+			],
+			[
+				"nu",
+				"numColumnas"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"styl",
+				"list-style"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"sy",
+				"list-style"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"m",
+				"menu"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5620,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/html/abrir_pdf1.html",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/index.html",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/php/loginAjax.php",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/registro.html",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/js/login.js",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/html/js/devolverUno.js",
+		"/Users/klamlis/miGit/Libertardores-form_RecursosDigitales/build/business/educacionMedia/php/login.php",
+		"/Users/klamlis/miGit/Fonteriuz_main/main.as",
+		"/Users/klamlis/miGit/Fonteriuz_main/index.html",
+		"/Users/klamlis/Desktop/adelanto_1/adelanto_1.html",
+		"/Users/klamlis/Documents/Fonteriuz/Backup_ WEB 2014/index.html",
+		"/Users/klamlis/miGit/Plantilla/main.as",
+		"/Users/klamlis/Desktop/generar.php",
+		"/Users/klamlis/Downloads/html/js/countdown.js",
+		"/Users/klamlis/Downloads/html/js/custom.js",
+		"/Users/klamlis/Downloads/html/js/cycle.js",
+		"/Users/klamlis/Downloads/html/js/easing.js",
+		"/Users/klamlis/Downloads/html/js/fitvids.js",
+		"/Users/klamlis/Downloads/html/js/html5shiv.js",
+		"/Users/klamlis/Downloads/html/js/ie8_fix_maxwidth.js",
+		"/Users/klamlis/Downloads/html/js/lib-1-3-2.js",
+		"/Users/klamlis/Downloads/html/js/lib-1-6-1.js",
+		"/Users/klamlis/Downloads/html/js/lib-1-7-1.js",
+		"/Users/klamlis/Downloads/html/js/lib-1-9-1.js",
+		"/Users/klamlis/Downloads/html/js/modernizr.js",
+		"/Users/klamlis/Downloads/html/js/mq.js",
+		"/Users/klamlis/Downloads/html/js/prettyPhoto.js",
+		"/Users/klamlis/Downloads/html/js/qtip.js",
+		"/Users/klamlis/Downloads/html/js/smooth-scroll.js",
+		"/Users/klamlis/Downloads/html/js/social.js",
+		"/Users/klamlis/Downloads/html/js/sorting.js",
+		"/Users/klamlis/Downloads/html/js/bootstrap.js",
+		"/Users/klamlis/Downloads/html/js/bxslider.js",
+		"/Users/klamlis/Downloads/html/js/calendar.js",
+		"/Users/klamlis/Downloads/html/js/checkout.js",
+		"/Users/klamlis/Downloads/html/js/clearInput.js",
+		"/Users/klamlis/Downloads/html/index - TEMPLATE.html",
+		"/Users/klamlis/Documents/Fadalte/Web/2014/pages/mapa.html",
+		"/Users/klamlis/Documents/Cafam/Control Interno/Control interno Modulo 9/Guia de diseño (módulo7)/index_edgeActions.js",
+		"/Users/klamlis/Desktop/guia.html",
+		"/Users/klamlis/Downloads/recogiendo variables externas/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo3/sco2/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo3/sco2/page1.css",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo3/sco1/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo2/sco2/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo2/sco2/page1.css",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo1/sco5/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/modulo1/sco6/page1.html",
+		"/Volumes/KLAMLIS/modulo2/sco1/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/prueba5/sco2/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/Scorm/reflow/src/page1.html",
+		"/Volumes/KLAMLIS/Scorm/prueba5/sco1/page1.html",
+		"/Users/klamlis/Documents/Fonteriuz/Modulo Vehiculos/pruebas/src/main.as",
+		"/Users/klamlis/Downloads/SCORM_wrapper_test_SCORM2004-2/index.html",
+		"/Users/klamlis/Documents/Fonteriuz/Modulo Vehiculos/pruebas/sco1/index.html",
+		"/Users/klamlis/Downloads/navegacion/ttt.html",
+		"/Users/klamlis/Documents/Fonteriuz/CV_cheques/12_03_2014/cliploader.as",
+		"/Users/klamlis/Desktop/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/Curso Emprendimiento/mod1_habilidades/FinalVersion/source/Habilidades/Habilidades.html",
+		"/Users/klamlis/Documents/FLASH/Presentaciones en Multimedia/Q-training/archivos flash/Presentacion final/Presentacion_VideoFlash/Presentacion_VideosNoProtegidos/prueba/autorun.inf",
+		"/Users/klamlis/Documents/Los Libertadores/Curso Emprendimiento/mod1_habilidades/Correcciones/js/SCORM_API_wrapper.js",
+		"/Users/klamlis/Downloads/simple-set-completion-using-scorm/SCORM 2004 version/scorm2004.html",
+		"/Users/klamlis/Documents/Fonteriuz/CV_cheques/sco02/ejecutables/xml/images.xml",
+		"/Users/klamlis/Documents/Fonteriuz/CV_cheques/sco02/ejecutables/xml/evaluacion.xml",
+		"/Users/klamlis/Desktop/html5.html",
+		"/Users/klamlis/Documents/Los Libertadores/Curso Emprendimiento/mod1_habilidades/Correcciones/index_edgeActions.js",
+		"/Users/klamlis/Downloads/Sopa/sopa2_edgeActions.js",
+		"/Users/klamlis/Documents/HTML5/joomla/templates/Responsive Desing/Yootheme/square/Joomla 2.5/yoo_square_demo_package_j25/templates/yoo_square/warp.php",
+		"/Users/klamlis/Desktop/.htaccess.txt",
+		"/Users/klamlis/Desktop/legacy.php",
+		"/Users/klamlis/Documents/Cafam/Actividades 2013 - 10/SopaDeLetras/sopa_edgeActions.js",
+		"/Users/klamlis/Desktop/setup.php",
+		"/Users/klamlis/Desktop/router.php",
+		"/Users/klamlis/Desktop/htaccess.txt",
+		"/Users/klamlis/Documents/Cafam/Actividades 2013 - 10/SopaDeLetras/sopa.an",
+		"/Users/klamlis/Documents/Los Libertadores/CursoVideoIntroductorio/Curso/index_edgeActions.js",
+		"/Users/klamlis/Documents/Los Libertadores/CursoVideoIntroductorio/Enviar/index_edgeActions.js",
+		"/Users/klamlis/Documents/Cafam/DISEÑO - Licensiatura/CursoPrueba/_SOURCES/index_edgeActions.js",
+		"/Users/klamlis/Documents/HTML5/joomla/templates/Responsive Desing/Yootheme/Drive/yoo_drive_j25/index.php",
+		"/Users/klamlis/Documents/HTML5/joomla/templates/Responsive Desing/Yootheme/Drive/yoo_drive_j25/config.php",
+		"/Users/klamlis/Documents/HTML5/joomla/templates/Responsive Desing/Yootheme/Drive/yoo_drive_j25/warp/warp.php",
+		"/Users/klamlis/Documents/Cafam/Actividades 2013 - 10/arrastre/arrastre_edgeActions.js",
+		"/Users/klamlis/Desktop/min/info1/index/pag01.html",
+		"/Users/klamlis/Desktop/min/info1/index/index.html",
+		"/Users/klamlis/Desktop/min/info1/index/ejemplo.html",
+		"/Users/klamlis/Desktop/min/info1/index/js/jquery.easing.1.3.js",
+		"/Users/klamlis/Desktop/min/info1/index/js/jquery.nicescroll.plus.js",
+		"/Users/klamlis/Desktop/min/info1/index/js/jquery.min.js",
+		"/Users/klamlis/Desktop/min/info1/index/pag02.html",
+		"/Users/klamlis/Desktop/min/info1/index/js/style.css",
+		"/Users/klamlis/Desktop/min/info1/index/pag04.html",
+		"/Users/klamlis/Desktop/min/info1/index/js/EdgeCommons.js",
+		"/Users/klamlis/Documents/Ministerio Infografias/programacion/programacion.html",
+		"/Users/klamlis/Documents/Ministerio Infografias/p_OrdenamientoJuridico/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/eventos/evento/final/index/assets/index.html",
+		"/Users/klamlis/Desktop/login.php",
+		"/Users/klamlis/Documents/Los Libertadores/eventos/evento/final/entrar/entrar/assets/encuesta.php",
+		"/Users/klamlis/Documents/Los Libertadores/eventos/evento/final/entrar/entrar/assets/entrar.php",
+		"/Users/klamlis/Documents/Los Libertadores/evento/final/entrar/entrar/assets/entrar.php",
+		"/Users/klamlis/Documents/Los Libertadores/evento/web/entrar/entrar/assets/entrar.php",
+		"/Users/klamlis/Documents/Los Libertadores/evento/final/entrar/entrar/assets/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/evento/final/index/assets/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/evento/final/index/assets/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/evento/web/index/assets/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/evento/web/index/assets/page1.html",
+		"/Users/klamlis/Documents/Los Libertadores/evento/web/index/assets/php/conexion.php",
+		"/Users/klamlis/Downloads/logeo/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/evento/conexion.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/evento/index.php",
+		"/Users/klamlis/Documents/Los Libertadores/evento/participantes.csv",
+		"/Users/klamlis/Downloads/logeo/conexion.php",
+		"/Users/klamlis/Documents/Andres Amaya/Portal2012/FinalNuevoColor/index.html",
+		"/Users/klamlis/Documents/Cafam/Actividades 2013 - 10/SopaDeLetras/sopa.html",
+		"/Users/klamlis/Documents/Cafam/BackUp/Especializacion Planeación/4.Herramientas/unidad1_empaquetamiento/index.html",
+		"/Users/klamlis/Downloads/ParallaxSlider/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/Plantilla_Propuesta/plantilla/libs/EdgeCommons.Core.js",
+		"/Users/klamlis/Documents/Los Libertadores/Plantilla_Propuesta/plantilla/libs/EdgeCommons.Spotlight.js",
+		"/Users/klamlis/Documents/Los Libertadores/Plantilla_Propuesta/plantilla/libs/style.css",
+		"/Users/klamlis/Desktop/blog/ejercicio_Practico/index.html",
+		"/Users/klamlis/Desktop/blog/ejercicio/index.html",
+		"/Users/klamlis/Downloads/shadowbox-gallery-source-codes/index.html",
+		"/Users/klamlis/Downloads/shadowbox-gallery-source-codes/css/styles.css",
+		"/Users/klamlis/Documents/Cafam/BackUp/Especializacion Planeación/2. Gestion Ambiental/Unidad2_Empaquetamiento/index.html",
+		"/Users/klamlis/Documents/Fonteriuz/Prueba HTML5/source/index.html",
+		"/Users/klamlis/Documents/Los Libertadores/comunidad/Idioma_Comunidad/es-ES.com_communityG.ini",
+		"/Users/klamlis/Documents/Los Libertadores/comunidad/Idioma_Comunidad/es-ES.com_community.ini",
+		"/Users/klamlis/Downloads/jomsocial_es-ES_full-language-pack_v2-2/site/es-ES.com_community.ini",
+		"/Users/klamlis/Desktop/guia.ini"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"pageError",
+			"countdown",
+			"tCountdOwn",
+			"Chari\nMarat",
+			"Charity \nMarat",
+			"0",
+			"hours",
+			"hour",
+			"hours",
+			"></",
+			"3_evalua",
+			"3_evaluaç",
+			"3_evalua",
+			"e_intentarloNuevamente",
+			"switch",
+			"visible",
+			"e_enviar",
+			"btnSiguien",
+			"3_evalu",
+			"e_evaluacion",
+			"clearfix",
+			"image1",
+			"clearfix",
+			"arreglo_suspend[10] == \"1\"",
+			"arreglo_suspend[10] ",
+			"Proceso comercial",
+			"Comunicación y publicidad",
+			"Decir la verdad y cumplir, como estrategia comercial",
+			"Desmitificación y paradigmas comerciales",
+			"62AAD1",
+			"index",
+			"()\n",
+			"osea",
+			">",
+			"initCourse",
+			"btn_regresar003",
+			"prev_btn",
+			"prev_btn').ci",
+			"i[",
+			"indicadorPalabra",
+			"Polinomios Aritméticos",
+			"<?",
+			"$option->state = (ini_get('magic_quotes_gpc') == false);",
+			"id",
+			";;",
+			"status",
+			"COM_COMMUNITY_FORGOT",
+			"forgot",
+			"USER INFORMATION",
+			"More",
+			"COM_COMMUNITY_USERNAME",
+			"Username",
+			"únete",
+			"join ",
+			"Username",
+			"Photos",
+			"Change ",
+			"Change profile picture",
+			"index"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 5620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true
+}
