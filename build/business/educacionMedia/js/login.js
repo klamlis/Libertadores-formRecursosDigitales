@@ -6,7 +6,7 @@ $(document).ready(function()
 	$(".clicDescargar").click(function()
 	{
 		var index = $( ".clicDescargar" ).index( this );
-		alert(index);
+		//alert(index);
 	});
 
 	$("#btn_login").click(function()
