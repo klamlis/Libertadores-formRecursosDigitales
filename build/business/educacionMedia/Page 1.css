@@ -1,0 +1,629 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#Cabecera {
+    float: left;
+    height: 49px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(189, 192, 192);
+}
+
+#image {
+    float: none;
+    width: auto;
+    max-width: 13.920052%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+#box {
+    float: left;
+    height: 84px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    background-color: rgb(0, 76, 66);
+    background-image:-webkit-linear-gradient(270deg,rgb(255,255,255) 0%,rgb(189,192,192) 100%);
+    background-attachment: scroll;
+    background-size: auto;
+    position: relative;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box1 {
+    float: right;
+    height: 7px;
+    margin-left: 0px;
+    margin-top: 28.4375px;
+    clear: both;
+    width: 61.470298%;
+    background-color: rgb(0, 76, 66);
+    margin-right: 1.130614%;
+}
+
+#box2 {
+    float: right;
+    height: 16.34375px;
+    margin-left: 0px;
+    margin-top: 10.4375px;
+    clear: left;
+    width: 61.470718%;
+    background-color: rgb(130, 186, 39);
+    margin-right: 1.091697%;
+}
+
+#box3 {
+    float: left;
+    height: 751px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    background-color: rgb(231, 235, 236);
+}
+
+#box5 {
+    float: left;
+    height: 22px;
+    margin-left: 0%;
+    margin-top: 11px;
+    clear: both;
+    width: 100%;
+    background-color: rgb(130, 186, 39);
+}
+
+#box4 {
+    float: left;
+    height: 9px;
+    margin-left: 0%;
+    margin-top: 9px;
+    clear: both;
+    width: 100%;
+    background-color: rgb(0, 76, 66);
+    margin-right: 0%;
+}
+
+#Text {
+    float: none;
+    font-size: 15px;
+    width: 553.03125px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 30px;
+    clear: none;
+    min-height: 62px;
+    color: rgb(171, 23, 43);
+    font-family: arial;
+    text-indent: 2px;
+    position: absolute;
+    top: 12.21875px;
+    left: 24.9375px;
+    right: 0px;
+    bottom: 0px;
+    letter-spacing: 2px;
+}
+
+#textspan {
+    float: none;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+#text {
+    float: left;
+    font-size: 1em;
+    width: 95.367081%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 2.088884%;
+    margin-top: 64px;
+    clear: none;
+    min-height: 141px;
+    margin-right: 0%;
+    text-indent: 12px;
+}
+
+#textspan3 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan5 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: tahoma;
+    color: rgb(111, 111, 111);
+}
+
+#textspan2 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgb(0, 76, 66);
+    font-family: tahoma;
+    font-weight: 800;
+}
+
+#textspan4 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: tahoma;
+    color: rgb(111, 111, 111);
+}
+
+#text1 {
+    float: left;
+    font-size: 20px;
+    width: 88.922809%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 40px;
+    margin-left: 8.533156%;
+    margin-top: 41px;
+    clear: both;
+    min-height: 0px;
+    color: rgb(84, 84, 84);
+}
+
+#textspan8 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan6 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan7 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgb(0, 76, 66);
+}
+
+#textspan9 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan11 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan13 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan15 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan17 {
+    float: none;
+    font-size: 25px;
+    line-height: 1em;
+    color: rgb(171, 23, 43);
+}
+
+#textspan10 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan12 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan14 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan16 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+#textspan18 {
+    float: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: rgb(130, 186, 39);
+}
+
+@media only screen and (max-width: 1640px) {
+    #box2 {
+        width: 55.414444%;
+        height: 16.34375px;
+    }
+
+    #box1 {
+        width: 55.376334%;
+        height: 7px;
+    }
+
+    #box3 {
+        float: left;
+        height: 692px;
+        margin-left: 0%;
+        margin-top: 0px;
+        clear: both;
+        width: 100%;
+        background-color: rgb(231, 235, 236);
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #box4 {
+        margin-top: 8px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+
+    #box5 {
+        margin-top: 11px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 22px;
+    }
+
+    #Text {
+        width: 646.03125px;
+        height: auto;
+        text-align: center;
+    }
+
+    #text {
+        float: left;
+        font-size: 1em;
+        width: 95.706554%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 1.636344%;
+        margin-top: 12px;
+        clear: none;
+        min-height: 141px;
+    }
+}
+
+@media only screen and (max-width: 1354px) {
+    #box2 {
+        margin-right: 1.090949%;
+        margin-top: 10px;
+        clear: both;
+        width: 40.375996%;
+        height: 16.34375px;
+    }
+
+    #box1 {
+        width: 40.337089%;
+        height: 7px;
+    }
+
+    #box3 {
+        width: 100%;
+        height: 703px;
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+    }
+
+    #Text {
+        width: 553.03125px;
+    }
+
+    #textspan4 {
+        float: none;
+        font-size: 15px;
+        line-height: 1em;
+    }
+
+    #text {
+        text-indent: 12px;
+        line-height: 21px;
+        height: auto;
+        min-height: 160px;
+    }
+
+    #box5 {
+        margin-top: 11px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 22px;
+    }
+
+    #box4 {
+        margin-top: 9px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+}
+
+@media only screen and (max-width: 1004px) {
+    #box5 {
+        margin-top: 11px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 22px;
+    }
+
+    #box4 {
+        margin-top: 9px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+
+    #box3 {
+        height: 713px;
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+    }
+}
+
+@media only screen and (max-width: 839px) {
+    #box2 {
+        width: 29.052443%;
+        height: 16.34375px;
+    }
+
+    #box1 {
+        width: 29.011472%;
+        height: 7px;
+    }
+
+    #Text {
+        width: 553.03125px;
+    }
+
+    #box5 {
+        margin-top: 11px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 22px;
+    }
+
+    #box4 {
+        margin-top: 9px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+
+    #box3 {
+        height: 743px;
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    #box1 {
+        visibility: hidden;
+        margin-right: 1.130419%;
+        margin-top: 28.4375px;
+        clear: none;
+        width: 29.010183%;
+        height: 7px;
+    }
+
+    #box2 {
+        visibility: hidden;
+        margin-right: 1.090714%;
+        margin-top: 10px;
+        clear: both;
+        width: 29.052223%;
+        height: 16.34375px;
+    }
+
+    #Text {
+        top: 6.21875px;
+        left: 57.0625px;
+    }
+
+    #box4 {
+        margin-top: 13px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+
+    #box3 {
+        height: 757px;
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+    }
+
+    #box5 {
+        width: 100%;
+        height: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #Text {
+        top: 6px;
+        left: 5.734375px;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    #box1 {
+        width: 29.00641%;
+        height: 7px;
+    }
+
+    #box2 {
+        margin-right: 1.090634%;
+        margin-top: 10px;
+        clear: both;
+        width: 29.050926%;
+        height: 16.34375px;
+    }
+
+    #textspan1 {
+        float: none;
+        font-size: 8px;
+        line-height: 1em;
+    }
+
+    #box5 {
+        margin-top: 11px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 22px;
+    }
+
+    #box4 {
+        margin-top: 10px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+        height: 9px;
+    }
+
+    #box3 {
+        height: 880px;
+    }
+
+    #Cabecera {
+        width: 100%;
+        height: 49px;
+    }
+
+    #box {
+        width: 100%;
+        height: 84px;
+    }
+
+    #text1 {
+        margin-top: 37px;
+        margin-left: 3.664063%;
+        clear: both;
+    }
+
+    #text {
+        width: 95.703125%;
+    }
+
+    #image {
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+        height: auto;
+        width: auto;
+        max-width: 57.035176%;
+        margin-right: auto;
+    }
+}
+
