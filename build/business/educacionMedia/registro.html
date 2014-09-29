@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>REGISTRO</title>
+	<!-- jqueryMobile -->
+    <link rel="stylesheet" href="themes/libertadores_final.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <!-- final_jqueryMobile -->
+
+</head>
+<body>
+	<div data-role="page">
+        <script type="text/javascript">
+        $(document).ready(function()
+        {
+
+            $('#btn_registro').click(function()
+            {
+                var data_rDocumento = $("#r_documento").val();
+                var data_Nombres = $("#nombres").val();
+                var data_Apellidos = $("#apellidos").val();
+                var data_Colegio = $("#colegio").val();
+                var data_Mail = $("#mail").val();
+                var data_Informacion = $("#informacion option:selected").html();
+
+                $.post("php/registroAjax.php",{ data_rDocumento : data_rDocumento, data_Nombres : data_Nombres, data_Apellidos : data_Apellidos, data_Colegio : data_Colegio, data_Mail : data_Mail, data_Informacion : data_Informacion },function(respuestaRegistro)
+                {
+                    $.mobile.changePage('index.html',{transition: 'flow'});
+                });  
+
+            });
+
+        });
+        </script>
+
+	<div data-role="header">
+		<h1>REGISTRO</h1>
+	</div>
+    <!-- /header -->
+
+	<div role="main" class="ui-content">
+		<form>
+            <div style="padding:10px 20px;">
+                <label for="un" class="ui-hidden-accessible">Documento:</label>
+                <input type="text" name="user" id="r_documento" value="" placeholder="Documento" data-theme="a">
+
+                <label for="un" class="ui-hidden-accessible">Nombres</label>
+                <input type="text" name="user" id="nombres" value="" placeholder="Escribir sus nombre" data-theme="a">
+
+                <label for="un" class="ui-hidden-accessible">Apellidos</label>
+                <input type="text" name="user" id="apellidos" value="" placeholder="Escribir sus apellidos" data-theme="a">
+
+                <label for="un" class="ui-hidden-accessible">Colegio</label>
+                <input type="text" name="user" id="colegio" value="" placeholder="Colegio" data-theme="a">
+
+                <label for="un" class="ui-hidden-accessible">E-mail</label>
+                <input type="text" name="user" id="mail" value="" placeholder="Escribir e-mail" data-theme="a">
+				<p>Desea recibir información por parte de la universidad</p>
+                <select name="slider-flip-m" id="informacion" data-role="slider" data-mini="true">
+    				<option value="no">No</option>
+    				<option value="si">Si</option>
+				</select>
+
+                <input type="button" value="Registrarse" id="btn_registro">
+            </div>
+            </form>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+	
+</body>
+</html>
