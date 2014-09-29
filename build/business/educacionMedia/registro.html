@@ -11,6 +11,9 @@
     <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
     <!-- final_jqueryMobile -->
 
+    <!-- Clases JS Propias -->
+    <script type="text/javascript" src="js/jquery.numeric.js"></script>
+    <!-- final_Clases JS Propias -->
 </head>
 <body>
 	<div data-role="page">
@@ -18,19 +21,119 @@
         $(document).ready(function()
         {
 
+            $('#msgDocumento').hide();
+            $('#msgNombres').hide();
+            $('#msgApellidos').hide();
+            $('#msgColegio').hide();
+            $('#msgCorreo').hide();
+
+            ////Valores solo numericos
+            //$('#r_documento').numeric();
+            $("#r_documento").keydown(function(event) {
+               if(event.shiftKey)
+               {
+                    event.preventDefault();
+               }
+             
+               if (event.keyCode == 46 || event.keyCode == 8)    {
+               }
+               else {
+                    if (event.keyCode < 95) {
+                      if (event.keyCode < 48 || event.keyCode > 57) {
+                            event.preventDefault();
+                      }
+                    } 
+                    else {
+                          if (event.keyCode < 96 || event.keyCode > 105) {
+                              event.preventDefault();
+                          }
+                    }
+                  }
+               });
+            ////
             $('#btn_registro').click(function()
             {
+                $('#msgDocumento').hide();
+                $('#msgNombres').hide();
+                $('#msgApellidos').hide();
+                $('#msgColegio').hide();
+                $('#msgCorreo').hide();
+
                 var data_rDocumento = $("#r_documento").val();
                 var data_Nombres = $("#nombres").val();
                 var data_Apellidos = $("#apellidos").val();
                 var data_Colegio = $("#colegio").val();
                 var data_Mail = $("#mail").val();
-                var data_Informacion = $("#informacion option:selected").html();
+                var data_Informacion  = $('input:radio[name=informacion]:checked').val();
 
-                $.post("php/registroAjax.php",{ data_rDocumento : data_rDocumento, data_Nombres : data_Nombres, data_Apellidos : data_Apellidos, data_Colegio : data_Colegio, data_Mail : data_Mail, data_Informacion : data_Informacion },function(respuestaRegistro)
+                /////Validacion datos
+                var banderaDocumento;
+                var banderaNombres;
+                var banderaApellidos;
+                var banderaColegio;
+                var banderaCorreo;
+
+
+                if(data_rDocumento.length == 0)
                 {
-                    $.mobile.changePage('index.html',{transition: 'flow'});
-                });  
+                    $('#msgDocumento').show();
+                    banderaDocumento = false;
+                }
+                else
+                {
+                    banderaDocumento = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                     
+                }
+                /// 
+                if(data_Nombres.length == 0)
+                {
+                    $('#msgNombres').show();
+                    banderaNombres = false;
+                }
+                else
+                {
+                    banderaNombres = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                     
+                }
+                ///
+                if(data_Apellidos.length == 0)
+                {
+                    $('#msgApellidos').show();
+                    banderaApellidos = false;
+                }
+                else
+                {
+                    banderaApellidos = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                     
+                }
+                ///
+                if(data_Colegio.length == 0)
+                {
+                    $('#msgColegio').show();
+                    banderaColegio = false;
+                }
+                else
+                {
+                    banderaColegio = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                     
+                }
+
+                function f_validarBanderas(_banderaDocumento, _banderaNombres, _banderaApellidos, _banderaColegio)
+                {
+                    if(_banderaDocumento == true && _banderaNombres == true && _banderaApellidos == true && _banderaColegio == true)
+                    {
+                       $.post("php/registroAjax.php",{ data_rDocumento : data_rDocumento, data_Nombres : data_Nombres, data_Apellidos : data_Apellidos, data_Colegio : data_Colegio, data_Mail : data_Mail, data_Informacion : data_Informacion },function(respuestaRegistro)
+                        {
+                        $.mobile.changePage('index.html',{transition: 'flow'});
+                        }); 
+                    }
+                }
+
+                 
 
             });
 
@@ -45,25 +148,32 @@
 	<div role="main" class="ui-content">
 		<form>
             <div style="padding:10px 20px;">
+                <p id="msgDocumento"><font color="red">* Ingresar por favor el documento</font></p>
                 <label for="un" class="ui-hidden-accessible">Documento:</label>
                 <input type="text" name="user" id="r_documento" value="" placeholder="Documento" data-theme="a">
-
+                
+                <p id="msgNombres"><font color="red">* Ingresar por favor su nombre</font></p>
                 <label for="un" class="ui-hidden-accessible">Nombres</label>
                 <input type="text" name="user" id="nombres" value="" placeholder="Escribir sus nombre" data-theme="a">
-
+                
+                <p id="msgApellidos"><font color="red">* Ingresar por favor sus apellidos</font></p>
                 <label for="un" class="ui-hidden-accessible">Apellidos</label>
                 <input type="text" name="user" id="apellidos" value="" placeholder="Escribir sus apellidos" data-theme="a">
 
+                <p id="msgColegio"><font color="red">* Ingresar por favor su Colegio</font></p>
                 <label for="un" class="ui-hidden-accessible">Colegio</label>
                 <input type="text" name="user" id="colegio" value="" placeholder="Colegio" data-theme="a">
-
+                
+                <p id="msgCorreo"><font color="red">* Ingresar un correo valido</font></p>
                 <label for="un" class="ui-hidden-accessible">E-mail</label>
                 <input type="text" name="user" id="mail" value="" placeholder="Escribir e-mail" data-theme="a">
-				<p>Desea recibir información por parte de la universidad</p>
-                <select name="slider-flip-m" id="informacion" data-role="slider" data-mini="true">
-    				<option value="no">No</option>
-    				<option value="si">Si</option>
-				</select>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Desea conocer más información de la Fundación Universitaria Los Libertadores</legend>
+                    <input type="radio" name="informacion" id="radio-choice-c" value="si" checked="checked">
+                    <label for="radio-choice-c">Si</label>
+                    <input type="radio" name="informacion" id="radio-choice-d" value="no">
+                    <label for="radio-choice-d">No</label>
+                </fieldset>
 
                 <input type="button" value="Registrarse" id="btn_registro">
             </div>
