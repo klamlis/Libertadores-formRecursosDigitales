@@ -26,6 +26,8 @@
             $('#msgApellidos').hide();
             $('#msgColegio').hide();
             $('#msgCorreo').hide();
+            //
+            $('#miRespuesta').hide();
 
             ////Valores solo numericos
             //$('#r_documento').numeric();
@@ -50,7 +52,13 @@
                     }
                   }
                });
+
             ////
+            $('#btn_Regresar').click(function()
+            {
+                $.mobile.changePage('index.html',{transition: 'flow'});
+
+            });
             $('#btn_registro').click(function()
             {
                 $('#msgDocumento').hide();
@@ -64,6 +72,7 @@
                 var data_Apellidos = $("#apellidos").val();
                 var data_Colegio = $("#colegio").val();
                 var data_Mail = $("#mail").val();
+               // alert(data_Mail.indexOf('@', 0));
                 var data_Informacion  = $('input:radio[name=informacion]:checked').val();
 
                 /////Validacion datos
@@ -82,7 +91,7 @@
                 else
                 {
                     banderaDocumento = true;
-                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio, banderaCorreo);
                      
                 }
                 /// 
@@ -94,7 +103,7 @@
                 else
                 {
                     banderaNombres = true;
-                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio, banderaCorreo);
                      
                 }
                 ///
@@ -106,7 +115,7 @@
                 else
                 {
                     banderaApellidos = true;
-                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio, banderaCorreo);
                      
                 }
                 ///
@@ -118,17 +127,33 @@
                 else
                 {
                     banderaColegio = true;
-                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio);
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio, banderaCorreo);
                      
                 }
-
-                function f_validarBanderas(_banderaDocumento, _banderaNombres, _banderaApellidos, _banderaColegio)
+                ///Correo
+                if(data_Mail.indexOf('@', 0) == -1 || data_Mail.indexOf('.', 0) == -1) 
                 {
-                    if(_banderaDocumento == true && _banderaNombres == true && _banderaApellidos == true && _banderaColegio == true)
+    
+                    $('#msgCorreo').show();
+                    banderaCorreo = false;
+                }
+                else
+                {
+                    banderaCorreo = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaColegio, banderaCorreo);
+
+                }
+
+                function f_validarBanderas(_banderaDocumento, _banderaNombres, _banderaApellidos, _banderaColegio, _banderaCorreo)
+                {
+                    if(_banderaDocumento == true && _banderaNombres == true && _banderaApellidos == true && _banderaColegio == true && _banderaCorreo == true)
                     {
                        $.post("php/registroAjax.php",{ data_rDocumento : data_rDocumento, data_Nombres : data_Nombres, data_Apellidos : data_Apellidos, data_Colegio : data_Colegio, data_Mail : data_Mail, data_Informacion : data_Informacion },function(respuestaRegistro)
                         {
-                        $.mobile.changePage('index.html',{transition: 'flow'});
+                            $('#miRespuesta').show();
+                            $('#miForm').hide();
+                            
+                        //$.mobile.changePage('index.html',{transition: 'flow'});
                         }); 
                     }
                 }
@@ -146,38 +171,41 @@
     <!-- /header -->
 
 	<div role="main" class="ui-content">
-		<form>
+        <div id="miRespuesta">
+            Felicitaciones ya puede descargar los recursos 
+            <input type="button" value="Regresar" id="btn_Regresar">
+        </div>
+		<form id="miForm">
             <div style="padding:10px 20px;">
-                <p id="msgDocumento"><font color="red">* Ingresar por favor el documento</font></p>
+                <p id="msgDocumento"><font color="red">* Ingresar por favor el número de documento</font></p>
                 <label for="un" class="ui-hidden-accessible">Documento:</label>
-                <input type="text" name="user" id="r_documento" value="" placeholder="Documento" data-theme="a">
+                <input type="text" name="user" id="r_documento" value="" placeholder="Número de documento" data-theme="a">
                 
-                <p id="msgNombres"><font color="red">* Ingresar por favor su nombre</font></p>
+                <p id="msgNombres"><font color="red">* Ingresar por favor sus nombres</font></p>
                 <label for="un" class="ui-hidden-accessible">Nombres</label>
-                <input type="text" name="user" id="nombres" value="" placeholder="Escribir sus nombre" data-theme="a">
+                <input type="text" name="user" id="nombres" value="" placeholder="Escribir sus nombres" data-theme="a">
                 
                 <p id="msgApellidos"><font color="red">* Ingresar por favor sus apellidos</font></p>
                 <label for="un" class="ui-hidden-accessible">Apellidos</label>
                 <input type="text" name="user" id="apellidos" value="" placeholder="Escribir sus apellidos" data-theme="a">
 
-                <p id="msgColegio"><font color="red">* Ingresar por favor su Colegio</font></p>
+                <p id="msgColegio"><font color="red">* Ingresar por favor el nombre del colegio</font></p>
                 <label for="un" class="ui-hidden-accessible">Colegio</label>
-                <input type="text" name="user" id="colegio" value="" placeholder="Colegio" data-theme="a">
+                <input type="text" name="user" id="colegio" value="" placeholder="Nombre del colegio" data-theme="a">
                 
-                <p id="msgCorreo"><font color="red">* Ingresar un correo valido</font></p>
+                <p id="msgCorreo"><font color="red">* Ingresar un correo válido</font></p>
                 <label for="un" class="ui-hidden-accessible">E-mail</label>
-                <input type="text" name="user" id="mail" value="" placeholder="Escribir e-mail" data-theme="a">
+                <input type="text" name="user" id="mail" value="" placeholder="Escribir su e-mail" data-theme="a">
                 <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                     <legend>Desea conocer más información de la Fundación Universitaria Los Libertadores</legend>
                     <input type="radio" name="informacion" id="radio-choice-c" value="si" checked="checked">
-                    <label for="radio-choice-c">Si</label>
+                    <label for="radio-choice-c">Sí</label>
                     <input type="radio" name="informacion" id="radio-choice-d" value="no">
                     <label for="radio-choice-d">No</label>
                 </fieldset>
-
                 <input type="button" value="Registrarse" id="btn_registro">
             </div>
-            </form>
+        </form>
 	</div><!-- /content -->
 
 </div><!-- /page -->
