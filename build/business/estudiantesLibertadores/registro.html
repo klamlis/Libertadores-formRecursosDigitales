@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>REGISTRO</title>
+	<!-- jqueryMobile -->
+    <link rel="stylesheet" href="themes/libertadores_final.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <!-- final_jqueryMobile -->
+
+    <!-- Clases JS Propias -->
+    <script type="text/javascript" src="js/jquery.numeric.js"></script>
+    <!-- final_Clases JS Propias -->
+</head>
+<body>
+	<div data-role="page">
+        <script type="text/javascript">
+        $(document).ready(function()
+        {
+
+            $('#msgDocumento').hide();
+            $('#msgNombres').hide();
+            $('#msgApellidos').hide();
+            $('#msgColegio').hide();
+            $('#msgCorreo').hide();
+            //
+            $('#miRespuesta').hide();
+
+            ////Valores solo numericos
+            //$('#r_documento').numeric();
+            $("#r_documento").keydown(function(event) {
+               if(event.shiftKey)
+               {
+                    event.preventDefault();
+               }
+             
+               if (event.keyCode == 46 || event.keyCode == 8)    {
+               }
+               else {
+                    if (event.keyCode < 95) {
+                      if (event.keyCode < 48 || event.keyCode > 57) {
+                            event.preventDefault();
+                      }
+                    } 
+                    else {
+                          if (event.keyCode < 96 || event.keyCode > 105) {
+                              event.preventDefault();
+                          }
+                    }
+                  }
+               });
+
+            ////
+            $('#btn_Regresar').click(function()
+            {
+                $.mobile.changePage('index.html',{transition: 'flow'});
+
+            });
+            $('#btn_registro').click(function()
+            {
+                $('#msgDocumento').hide();
+                $('#msgNombres').hide();
+                $('#msgApellidos').hide();
+                $('#msgColegio').hide();
+                $('#msgCorreo').hide();
+
+                var data_rDocumento = $("#r_documento").val();
+                var data_Nombres = $("#nombres").val();
+                var data_Apellidos = $("#apellidos").val();
+                var data_Colegio = $("#colegio").val();
+                var data_Mail = $("#mail").val();
+                var data_Programas = $("#programas").val();
+                var data_Informacion  = $('input:radio[name=informacion]:checked').val();
+
+                /////Validacion datos
+                var banderaDocumento;
+                var banderaNombres;
+                var banderaApellidos;
+                var banderaColegio;
+                var banderaCorreo;
+
+
+                if(data_rDocumento.length == 0)
+                {
+                    $('#msgDocumento').show();
+                    banderaDocumento = false;
+                }
+                else
+                {
+                    banderaDocumento = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaCorreo);
+                     
+                }
+                /// 
+                if(data_Nombres.length == 0)
+                {
+                    $('#msgNombres').show();
+                    banderaNombres = false;
+                }
+                else
+                {
+                    banderaNombres = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaCorreo);
+                     
+                }
+                ///
+                if(data_Apellidos.length == 0)
+                {
+                    $('#msgApellidos').show();
+                    banderaApellidos = false;
+                }
+                else
+                {
+                    banderaApellidos = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaCorreo);
+                     
+                }
+                ///Correo
+                if(data_Mail.indexOf('@', 0) == -1 || data_Mail.indexOf('.', 0) == -1) 
+                {
+    
+                    $('#msgCorreo').show();
+                    banderaCorreo = false;
+                }
+                else
+                {
+                    banderaCorreo = true;
+                    f_validarBanderas(banderaDocumento, banderaNombres, banderaApellidos, banderaCorreo);
+
+                }
+
+                function f_validarBanderas(_banderaDocumento, _banderaNombres, _banderaApellidos, _banderaCorreo)
+                {
+                    if(_banderaDocumento == true && _banderaNombres == true && _banderaApellidos == true  && _banderaCorreo == true)
+                    {
+                       $.post("php/registroAjax.php",{ data_rDocumento : data_rDocumento, data_Nombres : data_Nombres, data_Apellidos : data_Apellidos, data_Programas : data_Programas, data_Mail : data_Mail, data_Informacion : data_Informacion },function(respuestaRegistro)
+                        {
+                            $('#miRespuesta').show();
+                            $('#miForm').hide();
+                        }); 
+                    }
+                }
+
+                 
+
+            });
+
+        });
+        </script>
+
+	<div data-role="header">
+		<h1>REGISTRO</h1>
+	</div>
+    <!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div id="miRespuesta">
+            Felicitaciones ya puede descargar los recursos 
+            <input type="button" value="Regresar" id="btn_Regresar">
+        </div>
+		<form id="miForm">
+            <div style="padding:10px 20px;">
+                <p id="msgDocumento"><font color="red">* Ingresar por favor el número de documento</font></p>
+                <label for="un" class="ui-hidden-accessible">Documento:</label>
+                <input type="text" name="user" id="r_documento" value="" placeholder="Número de documento" data-theme="a">
+                
+                <p id="msgNombres"><font color="red">* Ingresar por favor sus nombres</font></p>
+                <label for="un" class="ui-hidden-accessible">Nombres</label>
+                <input type="text" name="user" id="nombres" value="" placeholder="Escribir sus nombres" data-theme="a">
+                
+                <p id="msgApellidos"><font color="red">* Ingresar por favor sus apellidos</font></p>
+                <label for="un" class="ui-hidden-accessible">Apellidos</label>
+                <input type="text" name="user" id="apellidos" value="" placeholder="Escribir sus apellidos" data-theme="a">
+                <!-- PROGRAMAS -->
+                <label for="programas" class="select">Seleccione un programa</label>
+                <select name="programas" id="programas">
+                    <option value="Administracion De Empresas">ADMINISTRACIÓN DE EMPRESAS A DISTANCIA</option>
+                    <option value="Administracion De Empresas por ciclos propedeuticos">ADMINISTRACIÓN DE EMPRESAS POR CICLOS PROPEDEUTICOS</option>
+                    <option value="Administracion turistica y hotelera">ADMINISTRACIÓN TURÍSTICA Y HOTELERA</option>
+                    <option value="Comunicacion Social - Periodismo">COMUNICACION SOCIAL - PERIODISMO</option>
+                    <option value="Contaduria Publica">CONTADURIA PÚBLICA</option>
+                    <option value="Derecho">DERECHO</option>
+                    <option value="Diseno Grafico">DISEÑO GRAFICO</option>
+                    <option value="Economia">ECONOMIA</option>
+                    <option value="Economia Cartagena">ECONOMIA CARTAGENA</option>
+                    <option value="Especializacion en Administracion de empresas">ESPECIALIZACIÓN EN ADMINISTRACIÓN DE EMPRESAS</option>
+                    <option value="Especializacion en Educación ambiental - Distancia">ESPECIALIZACION EN EDUCACIÓN AMBIENTAL -DISTANCIA</option>
+                    <option value="Especializacion en el Arte en los procesos de aprendizaje">ESPECIALIZACION EN EL ARTE EN LOS PROCESOS DE APRENDIZAJE - DISTANCIA</option>
+                    <option value="Especializacion en estadistica aplicada">ESPECIALIZACIÓN EN ESTADISTICA APLICADA</option>
+                    <option value="Especializacion en informatica y multimedia en educacion - distancia">ESPECIALIZACION EN INFORMÁTICA Y MULTIMEDIA EN EDUCACIÓN - DISTANCIA</option>
+                    <option value="Especializacion en Logistica Internacional">ESPECIALIZACIÓN EN LOGÍSTICA INTERNACIONAL</option>
+                    <option value="Especializacion en Pedagogia de la Ludica">ESPECIALIZACION EN PEDAGOGÍA DE LA LÚDICA - DISTANCIA</option>
+                    <option value="Ingenieria aeronautica">INGENIERÍA AERONAUTICA</option>
+                    <option value="Ingenieria de Sistemas">INGENIERÍA DE SISTEMAS</option>
+                    <option value="Ingenieria Electronica">INGENIERÍA ELECTRONICA</option>
+                    <option value="Ingenierai Industrial">INGENIERIA INDUSTRIAL</option>
+                    <option value="Ingenieria Mecanica">INGENIERÍA MECANICA</option>
+                    <option value="Licenciatura en Educacion Especial">LICENCIATURA EN EDUCACIÓN ESPECIAL</option>
+                    <option value="Licenciatura en Pedagogia Infantil">LICENCIATURA EN PEDAGOGÍA INFANTIL</option>
+                    <option value="Psicologia">PSICOLOGÍA</option>
+                    <option value="Publicidad y Mercadeo">PUBLICIDAD Y MERCADEO</option>
+                    <option value="Tecnica Profesional Automotriz">TECNICA PROFESIONAL AUTOMOTRIZ</option>
+                    <option value="Técnica profesional en operacion turistica - Cartagena">TÉCNICA PROFESIONAL EN OPERACIÓN TURISTICA - CARTAGENA</option>
+                    <option value="Tecnica profesional en servicio automotriz - virtual">TÉCNICA PROFESIONAL EN SERVICIO AUTOMOTRIZ - VIRTUAL</option>
+                    <option value="Tecnologia en administracion de empresas por ciclos propedeuticos">TECNOLOGÍA EN ADMINISTRACIÓN DE EMPRESAS POR CICLOS PROPEDEUTICOS</option>
+                    <option value="Tecnologia en disgnostico y gestion automotriz">TECNOLOGÍA EN DIAGNÓSTICO Y GESTIÓN AUTOMOTRIZ - VIRTUAL</option>
+                    <option value="Tecnologia en gestion comercial y financiera">TECNOLOGIA EN GESTIÓN COMERCIAL Y FINANCIERA</option>
+                    <option value="Tecnologia en gestion turistica - Cartagena">TECNOLOGÍA EN GESTIÓN TURÍSTICA - CARTAGENA</option>
+                    <option value="Tecnologia en gestion turistica y hotelera">TECNOLOGÍA EN GESTIÓN TURÍSTICA Y HOTELERA</option>
+
+                </select>
+                
+                <p id="msgCorreo"><font color="red">* Ingresar un correo válido</font></p>
+                <label for="un" class="ui-hidden-accessible">E-mail</label>
+                <input type="text" name="user" id="mail" value="" placeholder="Escribir su e-mail" data-theme="a">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Desea conocer más información de la Fundación Universitaria Los Libertadores</legend>
+                    <input type="radio" name="informacion" id="radio-choice-c" value="si" checked="checked">
+                    <label for="radio-choice-c">Sí</label>
+                    <input type="radio" name="informacion" id="radio-choice-d" value="no">
+                    <label for="radio-choice-d">No</label>
+                </fieldset>
+
+                <input type="button" value="Registrarse" id="btn_registro">
+            </div>
+        </form>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+	
+</body>
+</html>

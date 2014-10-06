@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+	<link rel="stylesheet" href="css/boilerplate.css" />
+	<link rel="stylesheet" href="css/Page 1.css" />
+    <!-- jqueryMobile -->
+    <link rel="stylesheet" href="themes/libertadores_final.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <!-- final_jqueryMobile -->
+
+    <!-- Clases JS Propias -->
+    <script type="text/javascript" src="js/login.js"></script>
+    <!-- final_Clases JS Propias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    </head>
+    <body>
+<div data-role="page" id="pageUno">
+    <div id="primaryContainer" class="primaryContainer clearfix">
+        <div id="Cabecera" class="clearfix">
+            <img id="image" src="img/logo_libertadores.gif" class="image" />
+        </div>
+        <div id="box" class="clearfix">
+            <p id="Text">
+            <span id="textspan">REFUERZO ACADÉMICO</span><br /><span id="textspan1">ESTUDIANTES LIBERTADORES</span><br />
+            </p>
+            <div id="box1" class="clearfix">
+            </div>
+            <div id="box2" class="clearfix">
+            </div>
+        </div>
+        <div id="box3" class="clearfix">
+            <p id="text">
+            <span id="textspan2">Apreciado estudiante:</span><span id="textspan3"><br /></span><br /><span id="textspan4">Con Apoyo del Ministerio de Educación Nacional la <strong>Fundación Universitaria Los Libertadores</strong> comprometida con tu Permanencia y  Graduación Oportuna cuenta con cuatro Objetos Virtuales de Aprendizaje que tienen como objetivo nivelar competencias necesarias para que los procesos de aprendizaje universitario tengan mayor éxito. Por ello, te invitamos no sólo a que los consultes, sino a desarrollar las actividades propuestas en sus contenidos.</span><span id="textspan5"><br /><br/>Para hacer uso de los Objetos Virtuales de Aprendizaje debes dar click en el tema de interés</span><br />
+            </p>
+            <p id="text1">
+            <span id="textspan6">1.</span><span id="textspan7"> </span>Expresión Escrita Libertadores <br /><span id="textspan8">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar" >Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span> &nbsp;&nbsp;<br /><span id="textspan9">2.</span> Lectoescritura Libertadores&nbsp;<br /><span id="textspan10">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar">Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span><br /><span id="textspan11">3.</span> Matemática Cero&nbsp;<br /><span id="textspan12">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar">Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span><br /><span id="textspan13">4.</span> Orientación Vocacional Libertadores&nbsp;<br /><span id="textspan14">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar">Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span><br /><span id="textspan15">5.</span> Redacción Básica Libertadores&nbsp;<br /><span id="textspan16">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar">Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span><br /><span id="textspan17">6.</span> Tecnología Educativa Libertadores<br />&nbsp;<span id="textspan18">
+            <!-- espaciosAlinearItem -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- popUpMobile -->
+            <a href="#popupLogin" data-rel="popup" data-transition="pop" class="clicDescargar">Descargar</a>
+            <!-- fin_popUpMobile -->
+
+            </span><br />
+            </p>
+        </div>
+        <div id="box4" class="clearfix">
+        </div>
+        <div id="box5" class="clearfix">
+        </div>
+
+        <!-- popUpLogin -->
+        </div>
+        <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+    
+            <form id="form_loginDescargar">
+            <div style="padding:10px 20px;">
+                <p id="dataError">No se encuentra registrado, hacer clic <a href="registro.html" data-rel="dialog" data-transition="pop">aquí</a> para registrarse</p>
+                <!-- Si no se encuentra registrado clic <a href="registro.html" data-rel="dialog" data-transition="pop">aqui</a> -->
+                <label for="un" class="ui-hidden-accessible">Documento:</label>
+                <div id="ocultarLogin">
+                <input type="text" name="documento" id="documento" value="" placeholder="Documento" data-theme="a">
+                <input type="button" value="Descargar" id="btn_login">
+                </div>
+
+            </div>
+            </form>
+        </div>
+</div>
+    </body>
